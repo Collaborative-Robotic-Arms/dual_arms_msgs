@@ -15,6 +15,7 @@ find_package(std_msgs REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Brick.msg"
   "msg/BricksArray.msg"
+  "msg/GraspPoint.msg"
   DEPENDENCIES geometry_msgs std_msgs
 )
 
