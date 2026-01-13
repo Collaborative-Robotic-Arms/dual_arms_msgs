@@ -16,9 +16,15 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Brick.msg"
   "msg/BricksArray.msg"
   "msg/GraspPoint.msg"
+  "msg/SuperBrick.msg"
+  "action/MoveToPose.action"
+  "action/AlignToTarget.action"
+  "action/ExecuteTask.action"
+  "srv/GetAssemblyPlan.srv"   
+  "srv/DetectBricks.srv"      
+  "srv/GetGrasp.srv"
   DEPENDENCIES geometry_msgs std_msgs
 )
-
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
