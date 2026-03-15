@@ -23,6 +23,9 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/GetAssemblyPlan.srv"   
   "srv/DetectBricks.srv"      
   "srv/GetGrasp.srv"
+  "srv/GetHandoverZone.srv"
+  "srv/ResolveCollision.srv"
+  "srv/ExecuteMCTHandover.srv"
   DEPENDENCIES geometry_msgs std_msgs
 )
 
